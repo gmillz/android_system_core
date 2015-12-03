@@ -22,7 +22,7 @@ include $(CLEAR_VARS)
 #       's/^\([0-9]*\)[ \t]*liblog[ \t].*/-DLIBLOG_LOG_TAG=\1/p' \
 #       $(LOCAL_PATH)/event.logtags)
 # so make sure we do not regret hard-coding it as follows:
-liblog_cflags := -DLIBLOG_LOG_TAG=1005
+liblog_cflags := -DLIBLOG_LOG_TAG=1005 -Wno-unknown-warning-option
 
 ifneq ($(TARGET_USES_LOGD),false)
 liblog_sources := logd_write.c
