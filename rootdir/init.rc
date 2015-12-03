@@ -9,8 +9,8 @@ import /init.usb.rc
 import /init.${ro.hardware}.rc
 import /init.${ro.zygote}.rc
 import /init.trace.rc
-# Include SLIM's extra init file
-import /init.slim.rc
+# Include Tesla's extra init file
+import /init.tesla.rc
 
 
 on early-init
